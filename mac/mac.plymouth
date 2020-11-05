@@ -1,8 +1,8 @@
 [Plymouth Theme]
-Name=apple-mac-plymouth
-Description=Apple Mac Plymouth theme by - Nilotpal Biswas J
+Name=mac
+Description=A modified version of Apple Mac Plymouth theme originally made by Nilotpal Biswas J
 ModuleName=script
 
 [script]
-ImageDir=/usr/share/plymouth/themes/apple-mac-plymouth
-ScriptFile=/usr/share/plymouth/themes/apple-mac-plymouth/apple-mac-plymouth.script
+ImageDir=/usr/share/plymouth/themes/mac
+ScriptFile=/usr/share/plymouth/themes/mac/mac.script
