@@ -1,6 +1,6 @@
-# ---------------------[ Apple Mac Plymouth Bar]------------------
-# -------------------------[version 1.0]------------------------
-# ------------[ Created by Nilotpal Biswas ]------------
+#                              mac
+#          a modified version of Apple Mac Plymouth Bar
+#              originally created by Nilotpal Biswas
 # ------------------------[ Thank you ]-----------------------
 
 logo.image = Image("boot.png");
