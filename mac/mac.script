@@ -35,11 +35,9 @@ if (Plymouth.GetMode () == "shutdown")
 
 
 logo.sprite = Sprite(logo.image);
-logo.sprite.SetX (Window.GetX() + Window.GetWidth()  / 2 - logo.image.GetWidth()  / 2);
-#logo.sprite.SetY (Window.GetY() + Window.GetHeight() / 2 - logo.image.GetHeight() / 2); # original
+logo.sprite.SetX      (Window.GetX() + Window.GetWidth()  / 2 - logo.image.GetWidth()  / 2);
 logoYPosShutdownMode = Window.GetY() + Window.GetHeight() / 2 - logo.image.GetHeight() / 2;
-#logo.sprite.SetY (Window.GetY() + Window.GetHeight() / 2 - logo.image.GetHeight() / 1); # my change
-logoYPosBootMode = Window.GetY() + Window.GetHeight() / 2 - logo.image.GetHeight() / 1;
+logoYPosBootMode     = Window.GetY() + Window.GetHeight() / 2 - logo.image.GetHeight() / 1;
 
 # Set different Y position for logo for different modes
 if (Plymouth.GetMode () == "shutdown")
@@ -142,21 +140,24 @@ Plymouth.SetDisplayPasswordFunction(display_password_callback);
 
 if (Plymouth.GetMode () == "boot")
 {
+  # progress box -> the grey bar background
   progress_box.image = Image("progress_box.png");
   progress_box.sprite = Sprite(progress_box.image);
 
   progress_box.x = Window.GetX() + Window.GetWidth() / 2 - progress_box.image.GetWidth() / 2;
-  #change here
-  #progress_box.y = Window.GetY() + Window.GetHeight() * 0.65 - progress_box.image.GetHeight() / 2;
   progress_box.y = Window.GetY() + Window.GetHeight() * 0.55 - progress_box.image.GetHeight() / 2; # my change
   progress_box.sprite.SetPosition(progress_box.x, progress_box.y, 0);
 
+  # progress box outer -> the black background that gives the progress bar its rounded corners
+  progress_box_outer.image = Image("progress_box_outer.png");
+  progress_box_outer.sprite = Sprite(progress_box_outer.image);
+  progress_box_outer.sprite.SetPosition(progress_box.x, progress_box.y, 2);
+
+  # progress bar -> the white bar whose width changes dynamically
   progress_bar.original_image = Image("progress_bar.png");
   progress_bar.sprite = Sprite();
 
   progress_bar.x = Window.GetX() + Window.GetWidth()  / 2 - progress_bar.original_image.GetWidth() / 2;
-  #change here
-  #progress_bar.y = Window.GetY() + Window.GetHeight() / 2 * 1.3 - progress_box.image.GetHeight() / 2 + (progress_box.image.GetHeight() - progress_bar.original_image.GetHeight()) / 2;
   progress_bar.y = Window.GetY() + Window.GetHeight() / 2 * 1.1 - progress_box.image.GetHeight() / 2 + (progress_box.image.GetHeight() - progress_bar.original_image.GetHeight()) / 2; # my change
   progress_bar.sprite.SetPosition(progress_bar.x, progress_bar.y, 1);
 
