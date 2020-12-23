@@ -8,6 +8,9 @@ fi
 install() {
   echo "Starting installation of mac plymouth theme..."
 
+  echo "Removing previous installed theme files..."
+  sudo rm -rf /usr/share/plymouth/themes/mac
+  
   echo "Copying files..."
   sudo cp -r mac /usr/share/plymouth/themes && cd /usr/share/plymouth/themes
 

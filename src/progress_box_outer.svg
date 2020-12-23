@@ -9,39 +9,41 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="200"
-   height="8"
-   viewBox="0 0 52.916665 2.1166667"
+   width="240"
+   height="10"
+   viewBox="0 0 63.499998 2.6458334"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="progress_box_outer.svg"
-   inkscape:export-filename="progress_box_outer.png"
+   inkscape:export-filename="../mac/progress_box_outer.png"
    inkscape:export-xdpi="96.000008"
    inkscape:export-ydpi="96.000008">
   <defs
      id="defs2" />
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#000000"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="6.195"
-     inkscape:cx="100"
-     inkscape:cy="4"
+     inkscape:zoom="1"
+     inkscape:cx="313.81504"
+     inkscape:cy="-25.466298"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
-     inkscape:window-height="671"
+     inkscape:window-height="669"
      inkscape:window-x="0"
      inkscape:window-y="22"
      inkscape:window-maximized="1"
      units="px"
      inkscape:pagecheckerboard="true"
-     showguides="false" />
+     showguides="true"
+     inkscape:showpageshadow="false"
+     showborder="false" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -50,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,11 +60,20 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-294.88332)">
+     transform="translate(0,-294.35415)">
     <path
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.5999999;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-       d="M 0 0 L 0 4 C 0 1.7840001 1.7840001 0 4 0 L 0 0 z M 0 4 L 0 8 L 4 8 C 1.7840001 8 0 6.2159999 0 4 z M 196 0 C 198.216 0 200 1.7840001 200 4 L 200 0 L 196 0 z M 200 4 C 200 6.2159999 198.216 8 196 8 L 200 8 L 200 4 z "
-       id="rect4516"
-       transform="matrix(0.26458333,0,0,0.26458333,0,294.88332)" />
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.16656959;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       d="m 0,294.35415 v 1.32292 c 0,-0.58632 0.47201668,-1.05834 1.0583333,-1.05834 H 62.441666 c 0.586316,0 1.058333,0.47202 1.058333,1.05834 v -1.32292 z m 63.499999,1.32292 c 0,0.58631 -0.472017,1.05833 -1.058333,1.05833 H 1.0583333 C 0.47201668,296.7354 0,296.26338 0,295.67707 v 1.32291 h 63.499999 z"
+       id="rect1097"
+       inkscape:connector-curvature="0" />
+    <rect
+       rx="0.92604166"
+       ry="0.92604166"
+       y="294.75104"
+       x="0.13229166"
+       height="1.8520833"
+       width="63.235416"
+       id="rect1101"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
   </g>
 </svg>
