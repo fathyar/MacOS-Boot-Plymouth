@@ -4,8 +4,8 @@
 # ------------------------[ Thank you ]-----------------------
 
 logo.image = Image("boot.png");
-Window.SetBackgroundTopColor(0, 0, 0);
-Window.SetBackgroundBottomColor(0, 0, 0);
+Window.SetBackgroundTopColor(0.33203125, 0.33984375, 0.32421875);
+Window.SetBackgroundBottomColor(0.33203125, 0.33984375, 0.32421875);
 
 if (Plymouth.GetMode () == "shutdown")
 # To increase the possibility of certain shutdown messages we do a little math
