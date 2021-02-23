@@ -128,17 +128,18 @@ Plymouth.SetDisplayPasswordFunction(display_password_callback);
 if (Plymouth.GetMode () == "boot")
 {
   # progress box -> the grey bar background
-  progress_box.image = Image("progress_box.png");
-  progress_box.sprite = Sprite(progress_box.image);
+  # progress_box.image = Image("progress_box.png");
+  # progress_box.sprite = Sprite(progress_box.image);
+  # progress_box.x = Window.GetX() + Window.GetWidth() / 2 - progress_box.image.GetWidth() / 2;
+  # progress_box.y = Window.GetY() + Window.GetHeight() * 0.65 - progress_box.image.GetHeight() / 2;
+  # progress_box.sprite.SetPosition(progress_box.x, progress_box.y, 0);
 
-  progress_box.x = Window.GetX() + Window.GetWidth() / 2 - progress_box.image.GetWidth() / 2;
-  progress_box.y = Window.GetY() + Window.GetHeight() * 0.65 - progress_box.image.GetHeight() / 2;
-  progress_box.sprite.SetPosition(progress_box.x, progress_box.y, 0);
-
-  # progress box outer -> the black background that gives the progress bar its rounded corners
+  # progress box outer -> the overlay that gives the progress bar its rounded corners and outline
   progress_box_outer.image = Image("progress_box_outer.png");
   progress_box_outer.sprite = Sprite(progress_box_outer.image);
-  progress_box_outer.sprite.SetPosition(progress_box.x, progress_box.y, 2);
+  progress_box_outer.x = Window.GetX() + Window.GetWidth() / 2 - progress_box_outer.image.GetWidth() / 2;
+  progress_box_outer.y = Window.GetY() + Window.GetHeight() * 0.65 - progress_box_outer.image.GetHeight() / 2;
+  progress_box_outer.sprite.SetPosition(progress_box_outer.x, progress_box_outer.y, 2);
 
   # progress bar -> the white bar whose width changes dynamically
   progress_bar.original_image = Image("progress_bar.png");
